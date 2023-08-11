@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main: using the sizeoff command in c
+ * main - using the sizeoff command in c
  * Return: 0
  */
 int main(void)

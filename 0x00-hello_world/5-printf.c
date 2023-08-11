@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main: printing strings using printf (by adding \n at the end)
+ * main - printing strings using printf (by adding \n at the end)
  * Return: 0
  */
 int main(void)
