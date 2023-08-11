@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <string.h>
 #include <unistd.h>
 /**
  * main - writes a quote by Dora Korpar
