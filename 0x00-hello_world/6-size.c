@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main: using the sizeoff command in c
  * Return: 0
  */

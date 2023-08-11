@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main: printing strings using printf (by adding \n at the end)
  * Return: 0
  */
