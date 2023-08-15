@@ -1,19 +1,16 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: Use `putchar` function.
+ * Description: Use `putchar` function only
  * Return: 0
  */
 int main(void)
 {
-	char c = 'a';
+	char c;
 
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
-	putchar('\n');
+	for (c = 'a'; c <= 'z'; c++)
+		putchar (c);
+	putchar ('\n');
 
 	return (0);
 }
