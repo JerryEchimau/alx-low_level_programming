@@ -1,19 +1,20 @@
 #include "main.h"
+
 /**
- * print_most_numbers - Prints numbers 0 through 9
- * Description: does not ptint 2 and 4
- * can only use _putchar twice
+ * print_most_numbers - Print numbers 0 to 9, excluding 2 and 4.
+ * Description: Can only use _putchar twice.
  */
 void print_most_numbers(void)
 {
-	char x;
+	int i;
 
-	for (x = '0'; x <= '9'; x++)
+	i = 0;
+	while (i < 10)
 	{
-		if (x != '2' && x != '4')
-		{
-			_putchar((x % 10) + '0');
-		}
+		if (i != 2 && i != 4)
+			_putchar(i + '0');
+
+		i++;
 	}
 	_putchar('\n');
 }
