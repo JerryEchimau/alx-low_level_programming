@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_line - print a straight line
+ * @n: number of times '_' is printed
  * Description: only use _putchar
  * Return: 0
  */
