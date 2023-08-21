@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints 1 to 100
- * Description: multiples of 3 is Fizz, multiples of 5 is Buzz
- * multiples of both is Fizzbuzz
+ * Description: multiples of 3 is Fizz, multiples of 5 is Buzz and both is FizzBuzz
  * Return: 0
  */
 int main(void)
