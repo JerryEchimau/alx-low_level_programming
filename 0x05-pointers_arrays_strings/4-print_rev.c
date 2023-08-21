@@ -8,7 +8,7 @@ void print_rev(char *s)
 {
 	int tc; /* total characters in the string */
 	int c; /* characters to be reverese */
-	
+
 	for (tc = 0; s[tc] != '\0'; tc++)
 	{
 		;
