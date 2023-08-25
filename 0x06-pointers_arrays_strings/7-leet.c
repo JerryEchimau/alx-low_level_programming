@@ -5,7 +5,6 @@
  * @s: string to be encoded
  * Return: encoded string `s`
  */
-
 char *leet(char *s)
 {
 	int i;
