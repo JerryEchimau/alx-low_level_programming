@@ -22,13 +22,14 @@ int is_palindrome(char *s)
  */
 int _strlen(char *s)
 {
-	int length = 0;
-
-	while (s[length] != '\0')
+	if (*s == '\0')
 	{
-		length++;
+		return (0);
 	}
-	return (length);
+	else
+	{
+		return (1 + _strlen(s + 1));
+	}
 }
 
 /**
