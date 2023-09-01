@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 /**
  * main - coins to make change for AN AMOUNT OF MONEY
  * @argc: argument count
