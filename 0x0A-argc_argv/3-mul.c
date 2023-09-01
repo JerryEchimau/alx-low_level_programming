@@ -1,22 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - multiplies two numbers from the command line
+ * main - multiply 2 numbers passed to main, or Error
  * @argc: argument count
  * @argv: argument vector
- * Return: 0
+ * Return: 1 if error, 0 if function runs correctly
  */
+
 int main(int argc, char *argv[])
 {
-	int a = atoi(argv[1]);
-	int b = atoi(argv[2]);
-	int product = a * b;
+	(void) argc;
 
-	if (argc != 3)
+	if (argv[1] && argv[2])
 	{
-		printf("Error\n");
-		return (1);
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		return (0);
 	}
-	printf("%d\n", product);
-	return (0);
+	else
+		printf("Error\n");
+
+	return (1);
 }
