@@ -28,9 +28,10 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (copy = 0; copy <= length; copy++)
+	for (copy = 0; copy < length; copy++)
 	{
 		duplicate[copy] = str[copy];
 	}
+	duplicate[length] = '\0';
 	return (duplicate);
 }
