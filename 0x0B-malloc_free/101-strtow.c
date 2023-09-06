@@ -9,19 +9,23 @@
  */
 char **strtow(char *str)
 {
+	char **words;
+	char *word;
+	int i, count = 0;
+
 	if (str == NULL || *str == '\0')
 		return (NULL);
-	char **words = malloc(sizeof(char *) * (1 + strlen(str)));
-
+	for (i = 0; str[i]; i++)
+		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
+			count++;
+	words = malloc(sizeof(char *) * (count + 1));
 	if (words == NULL)
 		return (NULL);
-	int i = 0;
-	char *word = strtok(str, " ");
-
+	i = 0;
+	word = strtok(str, " ");
 	while (word != NULL)
 	{
-		words[i] = word;
-		i++;
+		words[i++] = word;
 		word = strtok(NULL, " ");
 	}
 	words[i] = NULL;
