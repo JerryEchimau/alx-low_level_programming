@@ -24,6 +24,7 @@ char **strtow(char *str)
 		return (NULL);
 	i = 0;
 	word = strtok(str, " ");
+
 	while (word != NULL)
 	{
 		words[i++] = word;
