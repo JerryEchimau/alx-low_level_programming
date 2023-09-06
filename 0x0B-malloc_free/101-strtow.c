@@ -19,6 +19,7 @@ char **strtow(char *str)
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 			count++;
 	words = malloc(sizeof(char *) * (count + 1));
+
 	if (words == NULL)
 		return (NULL);
 	i = 0;
