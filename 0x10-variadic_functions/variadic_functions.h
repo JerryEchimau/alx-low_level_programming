@@ -11,11 +11,6 @@ void print_float(va_list args);
 void print_string(va_list args);
 void print_all(const char * const format, ...);
 
-/**
- * struct checks_type - checks the functions passed
- * @type: type
- * @f: pointer to the function
- */
 typedef struct checks_type
 {
 	char *type;
