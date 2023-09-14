@@ -4,6 +4,7 @@
 /**
  * sum_them_all - sum all of its paramenters
  * @n: number of parameters
+ * @...: arguments to be summed
  * Return: sum, and 0 if n is 0
  */
 int sum_them_all(const unsigned int n, ...)
