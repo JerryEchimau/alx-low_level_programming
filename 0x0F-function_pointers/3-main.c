@@ -19,6 +19,12 @@ int main(int argc, char *argv[])
 		return (98);
 	}
 
+	if (argv[2][1] != '\0')
+	{
+		printf("Error\n");
+		return (99);
+	}
+
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
