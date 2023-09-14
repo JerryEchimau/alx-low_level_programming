@@ -50,29 +50,43 @@ void print_string(va_list args)
  */
 void print_all(const char * const format, ...)
 {
-	unsigned int i, j;
 	va_list args;
-	char *separator;
+	unsigned int i = 0, j;
+	char *separator = "";
+	char *str_format = (char *)format;
 
-	checks_type sto[] = {
-		{ "c", print_char },
-		{ "f", print_float },
-		{ "s", print_string },
-		{ "i", print_integer }
-	};
-
-	i = 0;
-	separator = "";
 	va_start(args, format);
-	while (format != NULL && format[i / 4] != '\0')
+
+	while (format && str_format[i])
 	{
-		j = i % 4;
-		if (sto[j].type[0] == format[i / 4])
+		j = 0;
+		while (j < 4 && str_format[i] != "cifs"[j])
+			j++;
+
+		if (str_format[i] == '\0')
+			break;
+
+		printf("%s", separator);
+
+		switch (str_format[i])
 		{
-			printf("%s", separator);
-			sto[j].f(args);
-			separator = ", ";
+			case 'c':
+				print_char(args);
+				break;
+			case 'i':
+				print_integer(args);
+				break;
+			case 'f':
+				print_float(args);
+				break;
+			case 's':
+				print_string(args);
+				break;
+			default:
+				i++;
+				continue;
 		}
+		separator = ", ";
 		i++;
 	}
 	printf("\n");

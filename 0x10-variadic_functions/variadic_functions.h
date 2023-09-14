@@ -11,10 +11,4 @@ void print_float(va_list args);
 void print_string(va_list args);
 void print_all(const char * const format, ...);
 
-typedef struct checks_type
-{
-	char *type;
-	void (*f)();
-} checks_type;
-
 #endif /* VARIADIC_FUNCTIONS */
