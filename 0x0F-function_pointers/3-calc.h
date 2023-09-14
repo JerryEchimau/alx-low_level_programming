@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #ifndef CALC_H
 #define CALC_H
 
@@ -13,6 +15,7 @@ typedef struct op
 } op_t;
 
 /* Function prototypes */
+int (*get_op_func(char *s))(int, int);
 int op_add(int a, int b);
 int op_sub(int a, int b);
 int op_mul(int a, int b);
