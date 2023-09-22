@@ -16,6 +16,6 @@ size_t list_len(const list_t *h)
 		count++;/* Increment the count for each node */
 		h = h->next;/* Move to the next node */
 	}
-	return (count); // Return the total number of elements.
+	return (count);/* Return the total number of elements */
 }
 
