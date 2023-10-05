@@ -1,43 +1,96 @@
 #include "lists.h"
 
+size_t looped_listint_count(listint_t *head);
+size_t free_listint_safe(listint_t **h);
+
 /**
- * print_listint_safe - Print a `listint_t` linked list including mem addresses
- * @head: head of linked list
- * Description: Go through the list only once.
- * Return: number of nodes in list. If fails, exit with status 98.
+ * looped_listint_count - Counts the number of unique nodes
+ *                      in a looped listint_t linked list.
+ * @head: A pointer to the head of the listint_t to check.
+ *
+ * Return: If the list is not looped - 0.
+ *         Otherwise - the number of unique nodes in the list.
  */
-size_t print_listint_safe(const listint_t *head)
+size_t looped_listint_count(listint_t *head)
 {
-	const listint_t *current;
-	size_t count;
-	int loop_detected = 0;
+	listint_t *tortoise, *hare;
+	size_t nodes = 1;
 
-	current = head;
-	count = 0;
-
-	if (head == NULL)
-	{
+	if (head == NULL || head->next == NULL)
 		return (0);
-	}
 
-	while (current != NULL)
+	tortoise = head->next;
+	hare = (head->next)->next;
+
+	while (hare)
 	{
-		printf("[%p] %d\n", (void *)current, current->n);
-		count++;
-
-		if (current <= current->next)
+		if (tortoise == hare)
 		{
-			printf("-> [%p] %d\n", (void *)current->next, current->next->n);
-			loop_detected = 1;
-			break;
+			tortoise = head;
+			while (tortoise != hare)
+			{
+				nodes++;
+				tortoise = tortoise->next;
+				hare = hare->next;
+			}
+
+			tortoise = tortoise->next;
+			while (tortoise != hare)
+			{
+				nodes++;
+				tortoise = tortoise->next;
+			}
+
+			return (nodes);
 		}
 
-		current = current->next;
+		tortoise = tortoise->next;
+		hare = (hare->next)->next;
 	}
 
-	if (loop_detected)
+	return (0);
+}
+
+/**
+ * free_listint_safe - Frees a listint_t list safely (ie.
+ *                     can free lists containing loops)
+ * @h: A pointer to the address of
+ *     the head of the listint_t list.
+ *
+ * Return: The size of the list that was freed.
+ *
+ * Description: The function sets the head to NULL.
+ */
+size_t free_listint_safe(listint_t **h)
+{
+	listint_t *tmp;
+	size_t nodes, index;
+
+	nodes = looped_listint_count(*h);
+
+	if (nodes == 0)
 	{
-		exit(98);
+		for (; h != NULL && *h != NULL; nodes++)
+		{
+			tmp = (*h)->next;
+			free(*h);
+			*h = tmp;
+		}
 	}
-	return (count);
+
+	else
+	{
+		for (index = 0; index < nodes; index++)
+		{
+			tmp = (*h)->next;
+			free(*h);
+			*h = tmp;
+		}
+
+		*h = NULL;
+	}
+
+	h = NULL;
+
+	return (nodes);
 }
