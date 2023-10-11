@@ -1,56 +1,51 @@
 #include "main.h"
 
-/**
- * error_msg - Print an error message to the standard error.
- * @exit_code: The exit code for the program.
- * @format: The format string for the error message.
- * @...: Variable number of arguments for the error message.
- */
-void error_msg(int exit_code, const char *format, ...)
-{
-	va_list args;
-
-	va_start(args, format);
-	dprintf(STDERR_FILENO, format, args);
-	va_end(args);
-	exit(exit_code);
-}
+#define MAXSIZE 1024
+#define SE STDERR_FILENO
 
 /**
- * main - copies the contents of one file to another
- * @argc: argument count
- * @argv: arguent vector
- *
- * Return: 0 upon success
+ * main - create the copy bash script
+ * @ac: argument count
+ * @av: arguments as strings
+ * Return: 0
  */
-
-int main(int argc, char *argv[])
+int main(int ac, char *av[])
 {
-	int fd_from, fd_to, nread;
-	char buffer[BUFF_SIZE];
+	int input_fd, output_fd, istatus, ostatus;
+	char buf[MAXSIZE];
+	mode_t mode;
 
-	if (argc != 3)
-		error_msg(97, "Usage: cp file_from file_to\n");
-
-	fd_from = open(argv[1], O_RDONLY);
-	if (fd_from == -1)
-		error_msg(98, "Error: Can't read from file %s\n", argv[1]);
-
-	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC,
-			S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
-	if (fd_to == -1)
-		error_msg(99, "Error: Can't write to file %s\n", argv[2]);
-
-	while ((nread = read(fd_from, buffer, BUFF_SIZE)) > 0)
-	{
-		if (write(fd_to, buffer, nread) != nread)
-			error_msg(99, "Error: Can't write to file %s\n", argv[2]);
-	}
-
-	if (nread == -1)
-		error_msg(98, "Error: Can't read from file %s\n", argv[1]);
-
-	close(fd_from);
-	close(fd_to);
+	mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
+	if (ac != 3)
+		dprintf(SE, "Usage: cp file_from file_to\n"), exit(97);
+	input_fd = open(av[1], O_RDONLY);
+	if (input_fd == -1)
+		dprintf(SE, "Error: Can't read from file %s\n", av[1]), exit(98);
+	output_fd = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, mode);
+	if (output_fd == -1)
+		dprintf(SE, "Error: Can't write to %s\n", av[2]), exit(99);
+	do {
+		istatus = read(input_fd, buf, MAXSIZE);
+		if (istatus == -1)
+		{
+			dprintf(SE, "Error: Can't read from file %s\n", av[1]);
+			exit(98);
+		}
+		if (istatus > 0)
+		{
+			ostatus = write(output_fd, buf, (ssize_t) istatus);
+			if (ostatus == -1)
+			{
+				dprintf(SE, "Error: Can't write to %s\n", av[2]);
+				exit(99);
+			}
+		}
+	} while (istatus > 0);
+	istatus = close(input_fd);
+	if (istatus == -1)
+		dprintf(SE, "Error: Can't close fd %d\n", input_fd), exit(100);
+	ostatus = close(output_fd);
+	if (ostatus == -1)
+		dprintf(SE, "Error: Can't close fd %d\n", output_fd), exit(100);
 	return (0);
 }
