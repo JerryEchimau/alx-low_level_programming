@@ -50,11 +50,7 @@ int main(int argc, char *argv[])
 	if (nread == -1)
 		error_msg(98, "Error: Can't read from file %s\n", argv[1]);
 
-	if (close(fd_from) == -1)
-		error_msg(100, "Error: Can't close fd %d\n", fd_from);
-
-	if (close(fd_to) == -1)
-		error_msg(100, "Error: Can't close fd %d\n", fd_to);
-
+	close(fd_from);
+	close(fd_to);
 	return (0);
 }
