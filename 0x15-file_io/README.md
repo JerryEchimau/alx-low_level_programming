@@ -44,4 +44,21 @@ If any step in the process fails, the function returns -1 to indicate failure.
 
 
 **tASK 3**
+The error_msg function is used to print error messages and exit the program with the specified exit code.
+
+The program takes two command-line arguments, file_from and file_to.
+
+It opens file_from for reading and checks for errors (error code 98) if the file doesn't exist or cannot be read.
+
+It opens file_to for writing. If the file already exists, it truncates its content. It also checks for errors (error code 99) if it cannot open or write to the file.
+
+The program reads from file_from in chunks of 1024 bytes and writes to file_to. It continues this process until the entire file is copied.
+
+It checks for errors (error code 98) if it cannot read from file_from.
+
+After copying is complete, it closes both file descriptors and checks for errors (error code 100) if closing fails.
+
+The program handles error conditions as specified and returns with the appropriate exit code.
+
+**Task 4**
 
