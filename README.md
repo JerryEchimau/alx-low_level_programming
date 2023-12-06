@@ -4,8 +4,8 @@ This Repo contains directories and files written as part of the low-level-progra
 
 ## Author
 Jerry John Echimau <br>
-Send an Email: <br>
-[![Email Me](https://img.shields.io/badge/Email-Me-brightgreen)](mailto:jerryjohne77@gmail.com) <br>
+Send an Email to jerryjohne77@gmail.com: <br>
+[![Email Me](httpr://img.shields.io/badge/Email-Me-brightgreen)](mailto:jerryjohne77@gmail.com) <br>
 
 Let's Connect: <br>
 [![Twitter](https://img.shields.io/twitter/url?label=Follow&style=social&url=https%3A%2F%2Ftwitter.com%2Fjerry_e_john)](https://twitter.com/jerry_e_john) <br>
@@ -34,4 +34,4 @@ Let's Connect: <br>
 18. [0x12-singly_linked_lists](https://github.com/JerryEchimau/alx-low_level_programming/tree/master/0x12-singly_linked_lists)
 19. [0x13-more_singly_linked_lists](https://github.com/JerryEchimau/alx-low_level_programming/tree/master/0x13-more_singly_linked_lists)
 20. [0x14-bit_manipulation](https://github.com/JerryEchimau/alx-low_level_programming/tree/master/0x14-bit_manipulation)
-21. [0x15-file_io](https://github.com/JerryEchimau/alx-low_level_programming/tree/master/0x15-file_io)Send an Email:
+21. [0x15-file_io](https://github.com/JerryEchimau/alx-low_level_programming/tree/master/0x15-file_io)
