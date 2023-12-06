@@ -4,7 +4,7 @@ This Repo contains directories and files written as part of the low-level-progra
 
 ## Author
 Jerry John Echimau <br>
-Send an Email to jerryjohne77@gmail.com: <br>
+Send an Email: <br>
 [![Email Me](httpr://img.shields.io/badge/Email-Me-brightgreen)](mailto:jerryjohne77@gmail.com) <br>
 
 Let's Connect: <br>
