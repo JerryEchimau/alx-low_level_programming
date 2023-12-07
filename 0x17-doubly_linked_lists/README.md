@@ -5,7 +5,8 @@ In this project, I learnt about doubly linked lists and how to work with them in
 Here are the tasks handled in the project:
 ## Tasks :clipboard:
 ### 0. Print list
-
+- Leant how to print each element in a double linked list
+- [0-print_dlistint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/0-print_dlistint.c): prints all the elements of a dlistint_t list
 
 ### 1. List length
 
