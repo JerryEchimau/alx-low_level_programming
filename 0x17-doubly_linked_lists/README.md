@@ -33,7 +33,8 @@ Here are the tasks handled in the project:
 - [6-sum_dlistint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/6-sum_dlistint.c): returns the sum of all the data (n) of a dlistint_t linked list.
 
 ### 7. Insert at index
-
+- Learnt how to add a node at an index
+- [7-insert_dnodeint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/7-insert_dnodeint.c): Inserts a new node at a given position in a dlistint_t list
 
 ### 8. Delete at index
 
