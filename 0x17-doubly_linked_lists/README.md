@@ -25,7 +25,8 @@ Here are the tasks handled in the project:
 - [4-free_dlistint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/4-free_dlistint.c): frees a dlistint_t list.
 
 ### 5. Get node at index
-
+- Learnt how to iterate to the nth node of a dlistint_t list
+- [5-get_dnodeint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/5-get_dnodeint.c): returns the nth node of a dlistint_t linked list.
 
 ### 6. Sum list
 
