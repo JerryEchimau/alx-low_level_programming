@@ -21,7 +21,8 @@ Here are the tasks handled in the project:
 - [3-add_dnodeint_end.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/3-add_dnodeint_end.c): dds a new node at the end of a dlistint_t list.
 
 ### 4. Free list
-
+- Learnt how to free a doubly linked list
+- [4-free_dlistint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/4-free_dlistint.c): frees a dlistint_t list.
 
 ### 5. Get node at index
 
