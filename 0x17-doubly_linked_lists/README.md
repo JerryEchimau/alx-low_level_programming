@@ -41,12 +41,10 @@ Here are the tasks handled in the project:
 - [8-delete_dnodeint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/8-delete_dnodeint.c): deletes the node at index index of a dlistint_t linked list.
 
 ### 9. Crackme4
-
+- cracked it!
 
 ### 10. Palindromes
-
+- cracked it!
 
 ### 11. crackme5
-
-
-
+- cracked it!
