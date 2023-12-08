@@ -13,7 +13,8 @@ Here are the tasks handled in the project:
 - [1-dlistint_len.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/1-dlistint_len.c): returns the number of elements in a linked dlistint_t list.
 
 ### 2. Add node
-
+- Learnt how to add a node at the beggining of a dlistint_t list
+- [2-add_dnodeint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/2-add_dnodeint.c): adds a new node at the beginning of a dlistint_t list
 
 ### 3. Add node at the end
 
