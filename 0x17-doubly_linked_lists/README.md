@@ -29,7 +29,8 @@ Here are the tasks handled in the project:
 - [5-get_dnodeint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/5-get_dnodeint.c): returns the nth node of a dlistint_t linked list.
 
 ### 6. Sum list
-
+- Learnt how to add data in a doubly linked list
+- [6-sum_dlistint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/6-sum_dlistint.c): returns the sum of all the data (n) of a dlistint_t linked list.
 
 ### 7. Insert at index
 
