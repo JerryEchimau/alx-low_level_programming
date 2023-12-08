@@ -9,7 +9,8 @@ Here are the tasks handled in the project:
 - [0-print_dlistint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/0-print_dlistint.c): prints all the elements of a dlistint_t list
 
 ### 1. List length
-
+- Learnt how to return no of nodes in a doubly linked list
+- [1-dlistint_len.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/1-dlistint_len.c): returns the number of elements in a linked dlistint_t list.
 
 ### 2. Add node
 
