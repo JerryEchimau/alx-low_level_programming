@@ -17,7 +17,8 @@ Here are the tasks handled in the project:
 - [2-add_dnodeint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/2-add_dnodeint.c): adds a new node at the beginning of a dlistint_t list
 
 ### 3. Add node at the end
-
+- Learnt how to add a node at the end of a dlistint_t list
+- [3-add_dnodeint_end.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/3-add_dnodeint_end.c): dds a new node at the end of a dlistint_t list.
 
 ### 4. Free list
 
