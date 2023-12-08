@@ -37,6 +37,16 @@ Here are the tasks handled in the project:
 - [7-insert_dnodeint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/7-insert_dnodeint.c): Inserts a new node at a given position in a dlistint_t list
 
 ### 8. Delete at index
+- Learnt how to delete a node at an index
+- [8-delete_dnodeint.c](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/8-delete_dnodeint.c): deletes the node at index index of a dlistint_t linked list.
+
+### 9. Crackme4
+
+
+### 10. Palindromes
+
+
+### 11. crackme5
 
 
 
