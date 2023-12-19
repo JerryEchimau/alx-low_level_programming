@@ -8,4 +8,7 @@ Here are the tasks done in this project:
 - created a dynamic library using ``-shared`` argument to ``gcc`` of all object files
 - learnt how to use ``ldd`` to list dynamic dependencies of an executable file that relies on the dynamic library
 - Learnt how to include the current directory in the ``LD_LIBRARY_PATH`` environment which lists the list of directories that the system looks for shared libraries
-- [libdynamic.so](
+- [libdynamic.so](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x18-dynamic_libraries/libdynamic.so): dynamic library
+
+### 1. Without libraries what have we? We have no past and no future
+- 
