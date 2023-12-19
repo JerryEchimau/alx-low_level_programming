@@ -11,4 +11,8 @@ Here are the tasks done in this project:
 - [libdynamic.so](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x18-dynamic_libraries/libdynamic.so): dynamic library
 
 ### 1. Without libraries what have we? We have no past and no future
+- Here, I created a shell script that compiles all .c file in the current directory without linking then link the object files into a dynamic library
+- [1-create_dynamic_lib.sh](https://github.com/JerryEchimau/alx-low_level_programming/blob/master/0x18-dynamic_libraries/1-create_dynamic_lib.sh): a bash script that creates a dynamic library from all .c files
+
+### 2. Let's call C functions from Python
 - 
