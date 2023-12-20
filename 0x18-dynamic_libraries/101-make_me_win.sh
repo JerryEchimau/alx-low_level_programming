@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -shared -o mygm.so -fPIC gm.c
-export LD_PRELOAD=/$PWD/mygm.so
+wget -P .. https://raw.githubusercontent.com/JerryEchimau/alx-low_level_programming/master/0x18-dynamic_libraries/mygm.so
+export LD_PRELOAD="$PWD/../mygm.so"
