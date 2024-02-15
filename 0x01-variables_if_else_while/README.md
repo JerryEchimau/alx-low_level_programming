@@ -30,3 +30,8 @@ We also learnt about variables. Here are the tasks in this project.
 
 ### 8. Hexadecimal
 - Base 16 has 0-9 and a-f to represent 10 - 15
+- Use fo loops to go through numbers (1-9) and letters (a-f)
+
+### 9. Patience, persistence and perspiration make an unbeatable combination for success
+- Use a loop to loop through each num (0 - 9)
+
