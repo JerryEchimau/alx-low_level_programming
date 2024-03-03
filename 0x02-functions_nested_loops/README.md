@@ -17,4 +17,22 @@ Here are the tasks in this project: <br>
 - Here, we use the same technique but now the decimal number assigned to uppercase characters ranges  41 - 90.
 
 ### 5. Sign
+- Here, we use an ``if...else`` statements to go through each scenario
 
+### 6. There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you
+- Here, we can negate al negative numbers using if statement
+
+### 7. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
+- Here, the modulus (%) operator will show the last digit of a number
+
+### 8. I'm federal agent Jack Bauer, and today is the longest day of my life
+- Use a nested loop for hour and minutes
+
+### 9. Learn your times table
+- To create a 9 times table, use a nested loop with the out loop being the number and the inner loop hving the product
+
+### 10. a + b
+- For this one, just return the sum of the inputs
+
+### 11. 98 Battery Street, the OG
+- Build two cases, one with n being more than 98 (thus n--) and the other wih n being less than 98 (thus n++)
