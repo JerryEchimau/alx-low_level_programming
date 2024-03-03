@@ -1,8 +1,8 @@
 # 0x03. C - Debugging
 In this project, we learnt debugging and going through code to understand it <br>
 
-Here are the tasks in this project: ::clipboard::
-## Tasks
+Here are the tasks in this project:
+## Tasks :clipboard:
 ### 0. Multiple mains
 - To check whether the ``positive_or_negative()`` functions handles the case of 0 well, we chnage the value of variable ``i`` to 0
 
