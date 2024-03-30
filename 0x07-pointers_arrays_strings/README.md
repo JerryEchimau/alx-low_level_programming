@@ -36,10 +36,10 @@ Here are the projects that were completed:
 
 ### 7. The line of life is a ragged diagonal between duty and desire
 
-- Yet to fully understand the concept well but progress is substantial
+- In this, since the 2D matrix is pased to our function as a 1D integer pointer, we have to calculate the offset
+- The general formula for the offset of any square matrix is ``*(a + offset)`` and offset is calculated as ``i * size + i`` for the principle diagonal and ``i * size _ (size - 1 - i)`` for the secondary diagonal.
 
 ### 8. Double pointer, double fun
 
-- 
-
-### 
+- This simply involves chaging the double pointed character pointer to point to the same values as the character pointer *to.
+- It is more efficient to move around character pointers rather than copying the contents of the strings firts. That's the need for double pointer in this task
