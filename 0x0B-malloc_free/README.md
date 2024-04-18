@@ -27,6 +27,6 @@
 
 ### 4. It's not bragging if you can back it up
 
-- Here, we free both the inner memory ``grid[i]` and the outer memory ``grid``
+- Here, we free both the inner memory ``grid[i]`` and the outer memory ``grid``
 
 Author: Jerry Echimau
