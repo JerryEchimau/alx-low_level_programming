@@ -13,8 +13,7 @@ void _printint(va_list list);
 
 
 /**
- * checker - checks the type of arguments passed and assigns
- * appropriate function to print
+ * struct checker - checks the type of arguments passed
  * @type: type of argument
  * @f: pointer to the right function to print @type
 */
