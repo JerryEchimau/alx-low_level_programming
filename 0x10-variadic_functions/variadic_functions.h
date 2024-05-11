@@ -11,6 +11,13 @@ void _printstr(va_list list);
 void _printfloat(va_list list);
 void _printint(va_list list);
 
+
+/**
+ * checker - checks the type of arguments passed and assigns
+ * appropriate function to print
+ * @type: type of argument
+ * @f: pointer to the right function to print @type
+*/
 typedef struct checker
 {
 	char *type;

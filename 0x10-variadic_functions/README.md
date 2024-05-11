@@ -11,4 +11,11 @@
 
 ### 1. To be is to be the value of a variable
 
--
+- We do the same but here we simply print what is returned from the ``va_arg``
+
+### 2. One woman's constant is another woman's variable
+
+- Here, we do the same thing but first assign the output of ``va_arg`` to a ``char *`` in order to check whether it's NULL
+
+
+Author: Jerry Echimau
