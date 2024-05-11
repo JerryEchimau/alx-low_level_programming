@@ -3,7 +3,7 @@
 - In this project, we learnt about variadic functions; how to declare them, initialize them, and work with them
 - Here are the tasks in the project:
 
-## Tasks :Clipboard:
+## Tasks :clipboard:
 
 ### 0. Beauty is variable, ugliness is constant
 
