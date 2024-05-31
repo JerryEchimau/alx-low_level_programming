@@ -3,6 +3,7 @@
 5-island_perimeter
 """
 
+
 def island_perimeter(grid):
     """
     Returns the perimeter of the island described in grid.
@@ -17,4 +18,3 @@ def island_perimeter(grid):
                 if j > 0 and grid[i][j-1] == 1:
                     perimeter -= 2
     return perimeter
-
