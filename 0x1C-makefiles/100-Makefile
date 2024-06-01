@@ -1,48 +1,21 @@
-# 100-Makefile
-
-# Compiler
+# Variables
 CC = gcc
-
-# Source files
 SRC = main.c school.c
-
-# Object files
-OBJ = $(SRC:.c=.o)
-
-# Executable name
 NAME = school
-
-# Remove program
-RM = rm -f
-
-# Compiler flags
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-# Default rule: compile the executable
+# Targets
 all: $(NAME)
 
-# Link object files to create the executable
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+$(NAME): $(SRC)
+	$(CC) $(CFLAGS) $^ -o $@
 
-# Compile source files into object files
-main.o: main.c m.h
-	$(CC) -c main.c $(CFLAGS)
-
-school.o: school.c m.h
-	$(CC) -c school.c $(CFLAGS)
-
-# Rule to delete all temporary files and the executable
 clean:
 	$(RM) *~ $(NAME)
 
-# Rule to delete only the object files
 oclean:
-	$(RM) main.o school.o
+	$(RM) *.o
 
-# Rule to delete all temporary files, object files, and the executable
 fclean: clean oclean
 
-# Rule to force recompilation of all source files
-re: fclean all
-
+re: oclean all
