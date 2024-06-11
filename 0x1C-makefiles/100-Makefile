@@ -2,24 +2,23 @@ CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-RM = rm -f
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+	$(CC) $^ -o $@
 
 %.o: %.c m.h
 	$(CC) -Wall -Werror -Wextra -pedantic -c $< -o $@
 
 clean:
-	$(RM) $(NAME) *~
+	rm -f $(NAME) *~
 
 fclean: clean
-	$(RM) $(OBJ)
+	rm -f $(OBJ)
 
 oclean:
-	$(RM) $(OBJ)
+	rm -f $(OBJ)
 
 re: fclean all
 
