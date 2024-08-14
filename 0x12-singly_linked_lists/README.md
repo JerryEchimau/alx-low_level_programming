@@ -17,4 +17,15 @@ Here are the tasks in the project: <br>
 
 ### 2. Add node
 
-- 
+- Exchange new nodes with the head node
+- [2-add_node.c](2-add_node.c): adds a new node at the beginning of a list_t list
+
+### 3. Add node at the end
+
+- Exchange the last node to point to new node and new node to point to null
+- [3-add_node_end.c](3-add_node_end.c): adds a new node at the end of a list_t list
+
+### 4. Free list
+
+- Hold the pointer to next in a temp pointer and then free the current head till head is NULL
+- [4-free_list.c](4-free_list.c): Frees a list_t list
