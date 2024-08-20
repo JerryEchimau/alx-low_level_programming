@@ -64,7 +64,7 @@ Here are the tasks in this project <br>
 
 # Author
 
-Jerry Echimau
+Jerry Echimau <br>
 Send an Email: <br>
 [![Email Me](https://img.shields.io/badge/Email-Me-brightgreen)](mailto:jerryjohne77@gmail.com) <br>
 
