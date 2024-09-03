@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#define MAXSIZE 1204
+#define MAXSIZE 1024
 #define SE STDERR_FILENO
 
 /* libraries */
